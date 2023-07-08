@@ -1,0 +1,15 @@
+pipeline {
+ agent any 
+    stages {
+      stage ('git checkout') {
+        steps {
+          
+      }
+    }
+      stage ('UNIT TESTING') { 
+        steps{
+            sh 'mvn test'
+        }
+      }
+   }     
+}  
